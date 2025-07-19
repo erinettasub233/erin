@@ -1,6 +1,6 @@
 :root{
     --primary: #97271d;
-    --bg: #010101;
+    --bg: #111111;
 }
 
 *{
@@ -19,7 +19,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
-    color: #F5F5F5;
+    color: #fffcf4;
 }
 
 /* Navbar */
@@ -40,11 +40,11 @@ body{
 .navbar .navbar-logo{
     font-size: 1.3rem;
     font-weight: 700;
-    color: #F5F5F5;
+    color: #fffcf4;
 }
 
 .navbar .navbar-nav a{
-    color: #F5F5F5;
+    color: #fffcf4;
     display: inline-block;
     font-size: 1rem;
     margin: 0 1rem;
@@ -69,7 +69,7 @@ body{
 
 #hamburger-menu{
     display: none;
-    color: #F5F5F5;
+    color: #fffcf4;
 }
 
 /* Hero Section */
@@ -95,7 +95,7 @@ body{
     margin: 2.5rem 0rem;
     padding-top: 2.5rem;
     font-size: 4em;
-    color: #F5F5F5;
+    color: #fffcf4;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     line-height: 1;
 }
@@ -111,7 +111,7 @@ body{
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1rem;
-    color: #F5F5F5;
+    color: #fffcf4;
     background-color: var(--primary);
     border-radius: 0.5rem;
     box-shadow: 1, 1, 3, rgba(1, 1, 3, 0.5);
@@ -122,14 +122,16 @@ body{
     border: 1px solid var(--primary);
 }
 
-.project h2 {
+.work-exp h2 {
+    font-size: 2.5rem;
     text-align: left;
     padding-top: 5rem;
     margin-left: 6.7rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+    padding-top: 2rem;
 }
 
-.project p {
+.work-exp p {
     text-align: left;
     max-width: 30rem;
     font-weight: 200;
@@ -137,52 +139,57 @@ body{
     line-height: 1.6;
 }
 
-.project .row {
+.work-exp .row {
     display: flex;
     flex-wrap: wrap;
     margin-left: 3rem;
     justify-content: left;
 }
 
-.project .row .project-card {
+.work-exp .row .work-exp-card {
     padding: 2.5rem;
-    width: 50%;
+    padding-top: 0;
     margin: 1rem;
+    margin-right: 10rem;
     text-align: left;
 }
 
-.project .row .project-card img {
+.work-exp .row .work-exp-card img {
     border-radius: 10px;
+    margin-right: 10rem;
     width: 100%;
+    height: 220px;
+    object-fit:cover;
 }
 
-.project .row .project-card .project-card-title {
+.work-exp .row .work-exp-card .work-exp-card-title {
     margin: 0.5rem 0;
     font-size: 2rem;
 }
 
-.project .row .project-card .project-card-desc {
-    margin: 0 0;
+.work-exp .row .work-exp-card .work-exp-card-desc {
+    margin: 0 2rem 0 0;
+    width: 100%;
 }
 
-.project-card .image-wrapper {
+.work-exp-card .image-wrapper {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.project-card-img {
+.work-exp-card-img {
     width: 100%;
     display: block;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.project-card .image-wrapper:hover .project-card-img {
+.work-exp-card .image-wrapper:hover .work-exp-card-img {
     transform: scale(1.05);
 }
 
-.project-card .overlay {
+.work-exp-card .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -193,7 +200,7 @@ body{
     justify-content: center;
     align-items: center;
     opacity: 0;
-    color: #F5F5F5;
+    color: #fffcf4;
     font-size: 1.5rem;
     text-align: center;
     transition: opacity 0.3s ease;
@@ -201,11 +208,11 @@ body{
     padding: 1rem;
 }
 
-.project-card .image-wrapper:hover .overlay {
+.work-exp-card .image-wrapper:hover .overlay {
     opacity: 1;
 }
 
-.project-card .overlay p {
+.work-exp-card .overlay p {
     margin: 0;
     line-height: 1;
 }
@@ -226,7 +233,7 @@ footer .socials {
 }
 
 footer .socials a {
-    color: #F5F5F5;
+    color: #fffcf4;
     margin: 1rem;
 }
 
@@ -251,13 +258,13 @@ footer .credit {
 .hero-section h1 {
     margin: 1.4rem 0;
     font-size: 2.25rem;
-    color: #F5F5F5;
+    color: #fffcf4;
 }
 
 .hero-section p {
     margin: 1rem 10rem 1rem 0;
     font-size: 1.2rem;
-    color: #F5F5F5;
+    color: #fffcf4;
 }
 
 .hero-section a {
@@ -265,8 +272,9 @@ footer .credit {
 }
 
 .navbar.about {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(1, 1, 3, 0.5);
 }
+
 
 /* Media Queries */
 
@@ -299,7 +307,7 @@ footer .credit {
     }
 
     .navbar .navbar-nav a{
-        color: #F5F5F5;
+        color: #fffcf4;
         display: block;
         margin: 1.5rem;
         padding: 0.5rem;
@@ -323,7 +331,7 @@ footer .credit {
         font-size: 55%;
     }
 
-    .project .row .project-card {
+    .work-exp .row .work-exp-card {
     padding: 2rem;
     width: 100%;
     margin: 1rem;
@@ -345,7 +353,7 @@ footer .credit {
     }
 
     .navbar .navbar-nav a{
-        color: #F5F5F5;
+        color: #fffcf4;
         display: block;
         margin: 1.5rem;
         padding: 0.5rem;
